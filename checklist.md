@@ -88,19 +88,19 @@
 
   * [ ]  Link to appropriate R4DS chapter:
 
-   ```
-   If you are new to {{package name}}, the best place to start is the
-   [{{relevant chapter}}](http://r4ds.had.co.nz/{{relevant-chapter}}.html) in R
-   for data science.
-   ```
+    ```
+    If you are new to {{package name}}, the best place to start is the
+    [{{relevant chapter}}](http://r4ds.had.co.nz/{{relevant-chapter}}.html) in R
+    for data science.
+    ```
 
   * [ ] Add link to `_pkgdown.yaml`
 
-   ```yaml
-     links:
-     - text: Learn more
+    ```yaml
+    links:
+    - text: Learn more
        href: http://r4ds.had.co.nz/{{relevant-chapter}}.html
-   ```
+    ```
 
   * [ ]  Usage section shows a few examples.
 
@@ -112,10 +112,10 @@
 
   * [ ] Add package help page.
 
-   ```r
-   #' @keywords internal
-   "_PACKAGE"
-   ```
+    ```r
+    #' @keywords internal
+    "_PACKAGE"
+    ```
 
   * [ ] Use markdown for docs (`usethis::use_roxygen_md()`).
 
@@ -129,27 +129,27 @@
 
   * [ ] Add direct links to navbar.
 
-       ```yaml
-       - text: Intro
-         href: articles/stringr.html
-       - text: RegEx
-         href: articles/regular-expressions.html
-       ```
+    ```yaml
+    - text: Intro
+    href: articles/stringr.html
+    - text: RegEx
+    href: articles/regular-expressions.html
+    ```
 
   * [ ] Translate blog posts to `vignettes/releases`. Update navbar.
 
-       ```yaml
-       - text: News
-         menu:
-         - text: "Release notes"
-         - text: "Version 1.1.0"
-           href: articles/releases/stringr-1.1.0.html
-         - text: "Version 1.0.0"
-           href: articles/releases/stringr-1.0.0.html
-         - text: "------------------"
-         - text: "Change log"
-           href: news/index.html
-       ```
+    ```yaml
+    - text: News
+    menu:
+    - text: "Release notes"
+    - text: "Version 1.1.0"
+    href: articles/releases/stringr-1.1.0.html
+    - text: "Version 1.0.0"
+    href: articles/releases/stringr-1.0.0.html
+    - text: "------------------"
+    - text: "Change log"
+    href: news/index.html
+    ```
 
 ### Community
 

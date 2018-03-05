@@ -56,7 +56,7 @@
 
   * [ ] Add install instructions:
 
-    ````r
+    ```r
     # The easiest way to get {{package name}} is to install the whole tidyverse:
       install.packages("tidyverse")
 

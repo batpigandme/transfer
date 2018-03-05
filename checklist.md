@@ -6,18 +6,7 @@
   * [ ] Search for `hadley/` and replace with `tidyverse/`.
   * [ ] Run [styler](https://github.com/r-lib/styler) over whole package, `usethis::use_tidy_style()`.
   * [ ] Modify `.git/config`.
-
-### travis
-
   * [ ] Set up travis and codecov with `usethis::use_tidy_ci()`.
-  * [ ] Make sure includes:
-
-    ```yaml
-    r:
-     - oldrel
-     - release
-     - devel
-    ```
 
 ### pkgdown
 
@@ -54,7 +43,7 @@
   * [ ] Package name + hex logo.
 
     ```
-    # {{package name}} <img src="logo.png" align="right" />
+    # {{package name}} <img src="man/figs/logo.png" align="right" />
     ```
 
   * [ ] Add image + link on <http://tidyverse.org>
@@ -67,16 +56,16 @@
 
   * [ ] Add install instructions:
 
-    ````r
+    ```r
     # The easiest way to get {{package name}} is to install the whole tidyverse:
-    install.packages("tidyverse")
+      install.packages("tidyverse")
 
     # Alternatively, install just readr:
-     install.packages("{{package name}}")
+      install.packages("{{package name}}")
 
     # Or the the development version from GitHub:
     # install.packages("devtools")
-    devtools::install_github("tidyverse/{{package name}}")
+      devtools::install_github("tidyverse/{{package name}}")
     ```
 
   * [ ] Overview: 1-2 paragraphs including brief description/goals. Add h2, and set:
@@ -99,7 +88,7 @@
     ```yaml
     links:
     - text: Learn more
-       href: http://r4ds.had.co.nz/{{relevant-chapter}}.html
+         href: http://r4ds.had.co.nz/{{relevant-chapter}}.html
     ```
 
   * [ ]  Usage section shows a few examples.
@@ -131,24 +120,24 @@
 
     ```yaml
     - text: Intro
-    href: articles/stringr.html
+        href: articles/stringr.html
     - text: RegEx
-    href: articles/regular-expressions.html
+        href: articles/regular-expressions.html
     ```
 
   * [ ] Translate blog posts to `vignettes/releases`. Update navbar.
 
     ```yaml
     - text: News
-    menu:
+        menu:
     - text: "Release notes"
     - text: "Version 1.1.0"
-    href: articles/releases/stringr-1.1.0.html
+        href: articles/releases/stringr-1.1.0.html
     - text: "Version 1.0.0"
-    href: articles/releases/stringr-1.0.0.html
+        href: articles/releases/stringr-1.0.0.html
     - text: "------------------"
     - text: "Change log"
-    href: news/index.html
+        href: news/index.html
     ```
 
 ### Community
